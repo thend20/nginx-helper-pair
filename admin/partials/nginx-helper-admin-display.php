@@ -55,7 +55,7 @@ global $pagenow;
 			</div> <!-- End of #post-body-content -->
 			<div id="postbox-container-1" class="postbox-container">
 				<?php
-					require plugin_dir_path( __FILE__ ) . 'nginx-helper-sidebar-display.php';
+//					require plugin_dir_path( __FILE__ ) . 'nginx-helper-sidebar-display.php';
 				?>
 			</div> <!-- End of #postbox-container-1 -->
 		</div> <!-- End of #post-body -->
