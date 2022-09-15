@@ -165,18 +165,9 @@ class FastCGI_Purger extends Purger {
 	 * Purge everything.
 	 */
 	public function purge_all() {
-
-		$this->unlink_recursive( RT_WP_NGINX_HELPER_CACHE_PATH, false );
-		$this->log( '* * * * *' );
-		$this->log( '* Purged Everything!' );
-		$this->log( '* * * * *' );
-
-		/**
-		 * Fire an action after the FastCGI cache has been purged.
-		 *
-		 * @since 2.1.0
-		 */
-		do_action( 'rt_nginx_helper_after_fastcgi_purge_all' );
+            $_url_purge = home_url() . '/purgeall';
+            $this->log( '- Purging URL | ' . $_url_purge );
+            $this->do_remote_get( $_url_purge );
 	}
 
 	/**
