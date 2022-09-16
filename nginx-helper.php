@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Nginx Helper
- * Plugin URI:        https://github.com/
+ * Plugin URI:        https://github.com/thend20/nginx-helper-pair/
  * Description:       Cleans nginx's fastcgi/proxy cache
  * Domain Path:       /languages
  * Requires at least: 3.0
